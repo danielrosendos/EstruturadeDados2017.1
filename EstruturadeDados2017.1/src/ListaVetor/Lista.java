@@ -9,7 +9,7 @@ public interface Lista<E> {
 	public void addAntes(int pos, E e);
 	public void addDepois(int pos, E e);
 	
-	public abstract void remove(E e);
+	public abstract void removeNumber(E e);
 	public abstract void remove(int pos);
 	
 	public abstract E first(int pos);

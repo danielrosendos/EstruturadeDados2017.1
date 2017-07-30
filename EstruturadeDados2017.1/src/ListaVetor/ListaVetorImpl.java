@@ -66,10 +66,10 @@ public class ListaVetorImpl<E> implements Lista<E> {
 	}
 
 	@Override
-	public void remove(E e) {
+	public void removeNumber(E e) {
 		for (int i = 0; i < lista.length; i++) {
 			System.out.println("Entrei no FOR");
-			if (lista[i].equals(e)) {
+			if (lista[i] == e || lista[i].equals(e)) {
 				lista[i] = null;
 			}
 		}
@@ -82,7 +82,6 @@ public class ListaVetorImpl<E> implements Lista<E> {
 
 	@Override
 	public E first(int pos) {
-
 		return null;
 	}
 
