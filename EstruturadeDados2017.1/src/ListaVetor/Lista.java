@@ -13,6 +13,9 @@ public interface Lista<E> {
 	public abstract void remove(int pos);
 	
 	public abstract E first(int pos);
+	public abstract E last(int pos);
+	
+	public abstract E anterior(int pos);
 	public abstract E posterior(int pos);
 	
 }
