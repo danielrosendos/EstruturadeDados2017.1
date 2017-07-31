@@ -151,15 +151,30 @@ public class ListaDuplamenteEncadeada {
 
 			for (int j = i + 1; j < tamanho; j++) {
 				if (atual.getElemento() > prox.getElemento()) {
-					Integer Temp = atual.getElemento(); //Temp = x
-					atual.setElemento(prox.getElemento()); //x = y
-					prox.setElemento(Temp); //y = temp
+					Integer Temp = atual.getElemento(); // Temp = x
+					atual.setElemento(prox.getElemento()); // x = y
+					prox.setElemento(Temp); // y = temp
 				}
 				prox = prox.getProximo();
 			}
 			atual = atual.getProximo();
 			prox = atual.getProximo();
 
+		}
+
+	}
+
+	public void procuraNumer(int pos) {
+		NoDuplo aux = header.getProximo();
+
+		if (pos < 0 || pos > tamanho) {
+			System.out.println("Não pode fazer isso");
+		} else {
+			for (int i = 1; i < pos; i++) {
+				aux = aux.getProximo();
+			}
+
+			System.out.println("O Numero pesquisado é: " + aux.getElemento());
 		}
 
 	}
@@ -174,7 +189,7 @@ public class ListaDuplamenteEncadeada {
 			System.out.print(" -> " + aux.getElemento() + "\t");
 			aux = aux.getProximo();
 		}
-
+		System.out.println("Tamanho da Lista: " + tamanho);
 		System.out.println();
 	}
 }
