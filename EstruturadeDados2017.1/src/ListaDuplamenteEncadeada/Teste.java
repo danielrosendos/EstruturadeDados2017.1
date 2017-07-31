@@ -4,7 +4,8 @@ public class Teste {
 	public static void main(String[] args) {
 
 		ListaDuplamenteEncadeada lista = new ListaDuplamenteEncadeada();
-
+		ListaDuplamenteEncadeada lista2 = new ListaDuplamenteEncadeada();
+		
 		NoDuplo n1 = new NoDuplo(10, null, null);
 		NoDuplo n2 = new NoDuplo(9, null, null);
 		NoDuplo n3 = new NoDuplo(8, null, null);
@@ -15,56 +16,18 @@ public class Teste {
 		lista.insereFinal(n1);
 		lista.insereFinal(n5);
 		lista.insereFinal(n2);
+		
+		lista.imprimeLista();
+		
+		lista2.insereInicio(n4);
+		lista2.insereFinal(n1);
+		lista2.insereFinal(n5);
+		lista2.insereFinal(n2);
+		
+		lista2.imprimeLista();
+		
+		lista.verificarIgual(lista, lista2);
 
-		lista.imprimeLista();
-
-		lista.ordenarLista();
-
-		lista.imprimeLista();
 		
-		lista.removePos(2);
-		
-		lista.imprimeLista();
-		
-		lista.procuraNumer(1);
-		lista.procuraNumer(2);
-		lista.procuraNumer(3);
-		lista.procuraNumer(4);
-		
-		lista.removePos(1);
-		lista.removePos(1);
-		
-		lista.imprimeLista();
-		
-		lista.removeFim();
-		
-		lista.imprimeLista();
-		
-		lista.insereOrdenado(10);
-		lista.imprimeLista();
-		lista.insereOrdenado(7);
-		lista.imprimeLista();
-		lista.insereOrdenado(8);
-		lista.imprimeLista();
-		lista.insereOrdenado(9);
-		lista.imprimeLista();
-		lista.insereOrdenado(10);
-		lista.imprimeLista();
-		lista.insereOrdenado(11);
-	
-		lista.imprimeLista();
-	
-		lista.ordenarLista();
-		
-		lista.imprimeLista();
-		
-		lista.insereInicio(new NoDuplo(7, null, null));
-		
-		lista.imprimeLista();
-		
-		lista.ordenarLista();
-		
-		lista.imprimeLista();
-
 	}
 }

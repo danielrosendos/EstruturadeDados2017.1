@@ -163,13 +163,12 @@ public class ListaDuplamenteEncadeada {
 		}
 
 	}
-	
+
 	public void insereOrdenado(Integer valor) {
 		NoDuplo novo = new NoDuplo(valor, null, null);
 		insereInicio(novo);
 		ordenarLista();
-		
-		
+
 	}
 
 	public void procuraNumer(int pos) {
@@ -185,6 +184,28 @@ public class ListaDuplamenteEncadeada {
 			System.out.println("O Numero pesquisado é: " + aux.getElemento());
 		}
 
+	}
+
+	public void verificarIgual(ListaDuplamenteEncadeada l1, ListaDuplamenteEncadeada l2) {
+		Integer count = 0;
+		NoDuplo aux = l1.header.getProximo();
+		NoDuplo aux2 = l2.header.getProximo();
+
+		if (l1.tamanho != l2.tamanho) {
+			System.out.println("Listas Diferentes");
+			return;
+		}
+		for (int i = 0; i < l1.tamanho; i++) {
+			if (aux.getElemento() != aux2.getElemento()) {
+				System.out.println("Lista Diferentes");
+				return;
+			}
+
+			aux = aux.getProximo();
+			aux2 = aux2.getProximo();
+
+		}
+		System.out.println("Lista Iguais");
 	}
 
 	public void imprimeLista() {
