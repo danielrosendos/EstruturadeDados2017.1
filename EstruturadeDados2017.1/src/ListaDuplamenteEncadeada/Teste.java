@@ -40,6 +40,31 @@ public class Teste {
 		
 		lista.imprimeLista();
 		
+		lista.insereOrdenado(10);
+		lista.imprimeLista();
+		lista.insereOrdenado(7);
+		lista.imprimeLista();
+		lista.insereOrdenado(8);
+		lista.imprimeLista();
+		lista.insereOrdenado(9);
+		lista.imprimeLista();
+		lista.insereOrdenado(10);
+		lista.imprimeLista();
+		lista.insereOrdenado(11);
+	
+		lista.imprimeLista();
+	
+		lista.ordenarLista();
+		
+		lista.imprimeLista();
+		
+		lista.insereInicio(new NoDuplo(7, null, null));
+		
+		lista.imprimeLista();
+		
+		lista.ordenarLista();
+		
+		lista.imprimeLista();
 
 	}
 }

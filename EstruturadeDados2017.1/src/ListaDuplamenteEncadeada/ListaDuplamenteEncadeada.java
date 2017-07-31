@@ -163,6 +163,14 @@ public class ListaDuplamenteEncadeada {
 		}
 
 	}
+	
+	public void insereOrdenado(Integer valor) {
+		NoDuplo novo = new NoDuplo(valor, null, null);
+		insereInicio(novo);
+		ordenarLista();
+		
+		
+	}
 
 	public void procuraNumer(int pos) {
 		NoDuplo aux = header.getProximo();
