@@ -187,7 +187,6 @@ public class ListaDuplamenteEncadeada {
 	}
 
 	public void verificarIgual(ListaDuplamenteEncadeada l1, ListaDuplamenteEncadeada l2) {
-		Integer count = 0;
 		NoDuplo aux = l1.header.getProximo();
 		NoDuplo aux2 = l2.header.getProximo();
 
