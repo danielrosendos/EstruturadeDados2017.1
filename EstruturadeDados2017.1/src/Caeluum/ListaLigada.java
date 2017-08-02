@@ -77,6 +77,8 @@ public class ListaLigada {
 			Celula nova = new Celula(elemento);
 			this.primeira = nova;
 			this.ultima = nova;
+		}else {
+			
 		}
 		this.totalDeElementos++;
 	}
