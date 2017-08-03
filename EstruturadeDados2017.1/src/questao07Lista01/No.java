@@ -1,19 +1,15 @@
 package questao07Lista01;
 
 public class No {
-	private Integer elemento;
+	private Integer valor;
 	private No proximo;
 	
-	public No(Integer elemento, No proximo) {
-		this.elemento = elemento;
-		this.proximo = proximo;
+	//Getters and Setters
+	public Integer getValor() {
+		return valor;
 	}
-	
-	public Integer getElemento() {
-		return elemento;
-	}
-	public void setElemento(Integer elemento) {
-		this.elemento = elemento;
+	public void setValor(Integer valor) {
+		this.valor = valor;
 	}
 	public No getProximo() {
 		return proximo;
@@ -22,5 +18,16 @@ public class No {
 		this.proximo = proximo;
 	}
 	
+	//Construtores
+	public No(Integer valor, No proximo) {
+		this.valor = valor;
+		this.proximo = proximo;
+	}
 	
+	public No() {
+		
+	}
+	
+	
+
 }

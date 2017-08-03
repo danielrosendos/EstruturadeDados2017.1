@@ -14,11 +14,11 @@ public class questao04Lista01 {
 	 * push(1)  		 -				(5,9,1)
 	 * pop				 1				(5,9)
 	 * push(7)			 -				(5,9,7)
-	 * push(6)			 -				(5,8,7,6)
-	 * pop()			 6				(5,8,7)
-	 * pop()			 7				(5,8)
-	 * push(4)			 -				(5,8,4)
-	 * pop()			 4				(5,8)
+	 * push(6)			 -				(5,9,7,6)
+	 * pop()			 6				(5,9,7)
+	 * pop()			 7				(5,9)
+	 * push(4)			 -				(5,9,4)
+	 * pop()			 4				(5,9)
 	 * pop()			 8				(5)
 	 * 
 	 * Lembrar do conceito de pilha, o primeiro a entrar é o ultimo a sair
