@@ -141,7 +141,6 @@ public class ListaSimplementeEncadeada {
 				No noRemovido = aux;
 				noRemovido.setProximo(null);
 				tam--;
-				
 			}
 			
 			ant = aux;

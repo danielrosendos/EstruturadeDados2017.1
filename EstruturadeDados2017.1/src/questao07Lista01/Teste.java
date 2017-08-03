@@ -18,6 +18,7 @@ public class Teste {
 		lista.inserePosicao(2, 25);
 		lista.imprimeLista();
 		lista.inserePosicao(5, 66);
+		lista.inserePosicao(5, 66);
 		lista.imprimeLista();
 		lista.removeFinal();
 		lista.imprimeLista();

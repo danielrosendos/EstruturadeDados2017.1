@@ -15,30 +15,36 @@ public class PilhaPalindromo {
 
 		return novoNo.getNome();
 	}
-	
+
 	public void EhPal() {
-		if(VerificarPal()) {
+		if (VerificarPal()) {
 			System.out.println("É palindromo");
-		}else {
+		} else {
 			System.out.println("Não é palindromo");
 		}
 	}
 
 	public boolean VerificarPal() {
-		boolean ok = false;
+		// Recebe o nome passado
 		String aux = topo.getNome();
-		int i = 0;
-		int j = aux.length() - 1;
-		while (i < aux.length() && j >= 0) {
-			char c = aux.charAt(i);
-			char d = aux.charAt(j);
-			if(c == d) {
-				ok = true;
+		// Se o número de caracteres for impar, é impossível ser
+		if (aux.length() % 2 != 0)
+			return false;
+		int i = 0; // Começando de I
+		int j = aux.length() - 1; // Percorrendo o inverso de I
+		while (i < aux.length() / 2) {
+			// charAt = pega o caractere na posição informada
+			char v1 = aux.charAt(i);
+			char v2 = aux.charAt(j);
+			// Se alguma variável for diferente
+			if (v1 != v2) {
+				return false;
 			}
+			// Altera os valores dos iteretors
 			i++;
 			j--;
 		}
-		return ok;
+		return true;
 	}
 
 	public void imprimePilha() {
